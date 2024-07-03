@@ -91,7 +91,9 @@ When shield is connected with Arduino UNO following pins consumed,
    - At this step you are all set to test codes, for easy getting started we have provided various demo [example codes]() in github which you can download and try. 
    - Open one example code in Arduino and make sure you have selected correct board with suitable com port, click on upload button to transfer code on Arduino UNO.
    - _**Since same default HARDWARE SERIAL PINS of ARDUINO used for INTERFACING SERIAL SERVO, so you have to REMOVE SHIELD BEFORE UPLOADING ANY NEW CODE.**_
-     <img src="https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/images/upload_process.gif">
+
+     <img src="https://github.com/sbcshop/Serial_Servo_Arduino_Shield_Software/blob/main/images/Arduino_code.png">
+     
    - Checkout other examples below and build your own custom program codes using those references.
 
 ## Resources
