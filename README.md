@@ -2,6 +2,8 @@
 
 <img src= "https://cdn.shopify.com/s/files/1/1217/2104/files/Artboard_1_3.png?v=1718792957" />
 
+To support Arduino enthusiasts, we introduce the Arduino Serial Servo Shield. This versatile shield mirrors our serial servo controller's functionality, with two serial servo connectors, two programmable buttons, and a 1.14” TFT display for seamless integration and comprehensive feedback. Compatible with boards like Arduino Uno, Mega, ArdiPi, and Ardi32, it offers adaptable solutions for your projects.
+
 This Github provides getting started guide for Serial Servo Arduino Shield.
 
 ### Features
