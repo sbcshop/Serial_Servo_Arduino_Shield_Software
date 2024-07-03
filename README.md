@@ -53,7 +53,7 @@ For more details about Serial Servo Motor checkout [Manual](https://github.com/s
 
   
 ### Interfacing Details
-When shield is connected with Arduino UNO following pins consumed
+When shield is connected with Arduino UNO following pins consumed,
  - _Serial Servo Bus Pins:_
    * Servo connector having +ve[6~8.4VDC], -ve[GND] and Signal pin. 
    * Serial Servo Signal pins breakout into UART RXD and TXD to connect with Arduino UART pins,
@@ -76,8 +76,8 @@ When shield is connected with Arduino UNO following pins consumed
 - _Buttons Interfacing_
     | Arduino | Hardware | Function |
     |---|---|---|
-    |IO4 | BT1 | Programmable Button |
-    |IO5 | BT2 | Programmable Button |
+    |D4 | BT1 | Programmable Button |
+    |D5 | BT2 | Programmable Button |
   
   
 ### 1. Configure and Setup Development Environment
