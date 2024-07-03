@@ -84,13 +84,13 @@ When shield is connected with Arduino UNO following pins consumed,
   
 ### 1. Configure and Setup Development Environment
    - Download Arduino IDE from [official site](https://www.arduino.cc/en/software) and install into your system. We have use Arduino IDE 1.8.19
-   - Download [library zip file]() provided here in github.
+   - Download [library zip file](https://github.com/sbcshop/Serial_Servo_Arduino_Shield_Software/blob/main/libraries.zip) provided here in github.
    - Extract and copy files inside Document > Arduino > Libraries folder. Make sure to restart Arduino IDE whenever you update or add any libraries.
 
      <img src= "https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/images/library_files_path.png" />
 
 #### Testing First Code
-   - At this step you are all set to test codes, for easy getting started we have provided various demo [example codes]() in github which you can download and try. 
+   - At this step you are all set to test codes, for easy getting started we have provided various demo [example codes](https://github.com/sbcshop/Serial_Servo_Arduino_Shield_Software/tree/main/examples) in github which you can download and try. 
    - Open one example code in Arduino and make sure you have selected correct board with suitable com port, click on upload button to transfer code on Arduino UNO.
    - _**Since same default HARDWARE SERIAL PINS of ARDUINO used for INTERFACING SERIAL SERVO, so you have to REMOVE SHIELD BEFORE UPLOADING ANY NEW CODE.**_
 
