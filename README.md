@@ -56,69 +56,49 @@ For more details about Serial Servo Motor checkout [Manual](https://github.com/s
 When shield is connected with Arduino UNO following pins consumed
  - _Serial Servo Bus Pins:_
    * Servo connector having +ve[6~8.4VDC], -ve[GND] and Signal pin. 
-   * Serial Servo Signal pins breakout into UART RXD and TXD to connect with ESP32 UART pins,
+   * Serial Servo Signal pins breakout into UART RXD and TXD to connect with Arduino UART pins,
      
-     | ESP32 | Servo | Description | 
+     | Arduino | Servo | Description | 
      |---|---|---|
-     | TXD0/GPIO43 | Servo Bus RXD | UART communication pin |
-     | RXD0/GPIO44 | Servo Bus TXD | UART communication pin |
+     | TX | Servo Bus RXD | UART communication pin |
+     | RX | Servo Bus TXD | UART communication pin |
   
-- _Display interfacing with ESP32_
-    | ESP32 | Display | Function |
+- _Display interfacing with Arduino UNO_
+    | Arduino | Display | Function |
     |---|---|---|
-    | IO12 | LCD_CLK | Clock pin of SPI interface for Display|
-    | IO11 | LCD_DIN | MOSI (Master OUT Slave IN) pin of SPI interface|
-    | IO10 | LCD_CS | Chip Select pin of SPI interface|
-    | IO13 | LCD_DC| Data/Command (MISO) pin of SPI interface|
-    | IO14 | LCD_RST | Display Reset pin |
-    | IO9  | BL | Backlight of display|
+    | D13 | LCD_CLK | Clock pin of SPI interface for Display|
+    | D11 | LCD_DIN | MOSI (Master OUT Slave IN) pin of SPI interface|
+    | D10 | LCD_CS | Chip Select pin of SPI interface|
+    | D8  | LCD_DC| Data/Command (MISO) pin of SPI interface|
+    | D9  | LCD_RST | Display Reset pin |
+    | D6  | BL | Backlight of display|
   
 - _Buttons Interfacing_
-    | ESP32 | Hardware | Function |
+    | Arduino | Hardware | Function |
     |---|---|---|
-    |IO0 | BOOT |Boot button |
     |IO4 | BT1 | Programmable Button |
     |IO5 | BT2 | Programmable Button |
-    |IO6 | BT3 | Programmable Button |
   
   
 ### 1. Configure and Setup Development Environment
    - Download Arduino IDE from [official site](https://www.arduino.cc/en/software) and install into your system. We have use Arduino IDE 1.8.19
-   - Once installation done will add ESP32 S3 board support into IDE, for this first you need to add below link into preference:
-     
-     ```
-     https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
-     ```
-     
-     Select File > Preference, and add link as show in below image,
-      <img src= "https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/images/preference_board.gif" />
-      
-   - Now will install ESP32 based boards as shown in below image,
-
-     <img src= "https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/images/install_ESP32boards.gif" />
-     
-   - Once done, keeping default settings select the ESP32S3 Dev Module with suitable com port (may be different in your case) as shown below, 
-
-     <img src="https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/images/select_esp32_with_comport.gif">
-     
-     
-### 2. Installing Libraries
    - Download [library zip file]() provided here in github.
    - Extract and copy files inside Document > Arduino > Libraries folder. Make sure to restart Arduino IDE whenever you update or add any libraries.
 
      <img src= "https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/images/library_files_path.png" />
-     
-### 3. Testing First Code
+
+#### Testing First Code
    - At this step you are all set to test codes, for easy getting started we have provided various demo [example codes]() in github which you can download and try. 
-   - Open one example code in Arduino and make sure you have selected correct board with suitable com port, click on upload button to transfer code on Serial Servo ESP32.
+   - Open one example code in Arduino and make sure you have selected correct board with suitable com port, click on upload button to transfer code on Arduino UNO.
+   - _**Since same default HARDWARE SERIAL PINS of ARDUINO used for INTERFACING SERIAL SERVO, so you have to REMOVE SHIELD BEFORE UPLOADING ANY NEW CODE.**_
      <img src="https://github.com/sbcshop/3.2_Touchsy_ESP-32_Resistive_Software/blob/main/images/upload_process.gif">
    - Checkout other examples below and build your own custom program codes using those references.
 
 ## Resources
-  * [Schematic]()
-  * [Hardware Files]()
-  * [Step File]()
-  * [Getting Started with Arduino]()
+  * [Schematic](https://github.com/sbcshop/Serial_Servo_Arduino_Shield_Hardware/blob/main/Design%20Data/SCH%20Serial%20Servo%20Arduino%20Shield.pdf)
+  * [Hardware Files](https://github.com/sbcshop/Serial_Servo_Arduino_Shield_Hardware/tree/main)
+  * [Step File](https://github.com/sbcshop/Serial_Servo_Arduino_Shield_Hardware/blob/main/Mechanical%20Data/Serial%20Servo%20Arduino%20Shield.step)
+  * [Getting Started with Arduino](https://docs.arduino.cc/learn/starting-guide/getting-started-arduino/)
   * [Arduino IDE 1 overview](https://docs.arduino.cc/software/ide-v1/tutorials/Environment)
 
        
